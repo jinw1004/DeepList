@@ -1,6 +1,7 @@
 # DeepList
 This is the source code of our TCSVT paper:
-<DeepList: Learning Deep Features with Adaptive Listwise Constraint for Person Re-identification>
+
+DeepList: Learning Deep Features with Adaptive Listwise Constraint for Person Re-identification
 
 
 The package contains the following components:
