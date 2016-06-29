@@ -1,8 +1,3 @@
-%说明：
-%我们在ListMLE_018中加入similarity level，这算是最后一招了，看看管不管用。我们当然是希望它能够
-%管用的。看之前SimLev_004的结果似乎还是可以的
-
-
 clear;clc;
 % addpath(genpath('E:\wjin\Re-ID-My-Exp-2015-5-15\DeepEmbed_ReId-2015-7-14'));
 % run('E:\wjin\Re-ID-My-Exp-2015-5-15\DeepEmbed_ReId-2015-7-14\code\jkcnn\vl_setupnn.m') ;
@@ -106,8 +101,7 @@ for trial = 1:10
             FP = res_L2(2).x; mean_mag = mean(res_L2(2).aux);
 
             %================ listwise loss =======================
-            % sample lists。思考：listwise loss和triplet
-            % loss到底有什么不同呢？本质上就是是否把它们的梯度加进去的问题
+            % sample lists。
             dist = slmetric_pw(FP, FP, 'sqdist'); 
             sim = 4-dist;
             id_batch = repmat(1:numel(batch), [2 1]); id_batch = id_batch(:)';
