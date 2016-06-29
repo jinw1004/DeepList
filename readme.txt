@@ -1,5 +1,3 @@
-http://pan.baidu.com/s/1dE8LzLv
-
 This is the source code of our TCSVT paper:
 <DeepList: Learning Deep Features with Adaptive Listwise Constraint for Person Re-identification>
 
